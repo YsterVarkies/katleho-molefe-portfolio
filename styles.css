@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Besley;
+  src: url("assets/besley-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --paper: #efe9dc;
@@ -6,7 +14,7 @@
   --moss: #414f35;
   --moss-deep: #303e29;
   --white: #fffdf4;
-  --display: Georgia, "Times New Roman", serif;
+  --display: Besley, Georgia, serif;
   --text: "Segoe UI", Arial, sans-serif;
   --gutter: clamp(1.25rem, 5vw, 5.5rem);
   --ease: cubic-bezier(.16, 1, .3, 1);
@@ -26,7 +34,7 @@ svg { width: 1.15em; height: 1.15em; flex: none; }
 .skip:focus { transform: none; }
 
 .site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 5.6rem; }
-.wordmark { display: inline-flex; align-items: center; justify-content: center; width: 2.65rem; min-height: 2.65rem; background: var(--moss); color: var(--white); font: 700 1.05rem/1 var(--display); text-decoration: none; }
+.wordmark { display: inline-flex; align-items: center; justify-content: center; width: 2.65rem; min-height: 2.65rem; background: var(--moss); color: var(--white); font: 700 1.05rem/1 Georgia, serif; text-decoration: none; }
 .wordmark:focus-visible, .button:focus-visible { outline-color: var(--moss-deep); }
 nav { display: flex; gap: clamp(1rem, 3.2vw, 3rem); }
 nav a { padding-block: .55rem; font-size: .9375rem; font-weight: 600; text-decoration: none; }
